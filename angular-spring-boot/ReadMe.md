@@ -2,7 +2,7 @@
 
 ## Create project and tweat configuration
 
-Very first thing, please create your project as like https://medium.com/@majdasab/integrating-an-angular-project-with-spring-boot-e3a043b7307b
+Very first thing, please create your project as like [this](https://medium.com/@majdasab/integrating-an-angular-project-with-spring-boot-e3a043b7307b), thanks to [Majd Asab](https://medium.com/@majdasab).
 
 ## Next step
 
