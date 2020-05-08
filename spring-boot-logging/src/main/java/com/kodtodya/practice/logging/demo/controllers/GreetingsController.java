@@ -2,17 +2,15 @@ package com.kodtodya.practice.logging.demo.controllers;
 
 import com.kodtodya.practice.logging.demo.services.GreetingsService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class GreetingsController {
 
-    @Autowired
+    @Autowired(required = true)
     private GreetingsService greetingsService;
 
-    @GetMapping(value = "/hello")
+    @GetMapping("/hello")
     public String controlGreetings(@RequestParam(name = "name", required = false) String name) {
         return greetingsService.sayHello(name);
     }
