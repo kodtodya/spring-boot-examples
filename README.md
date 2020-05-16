@@ -13,3 +13,4 @@
 - spring-boot-logging
 - interceptor-demo
 - internationalization-demo
+- filters-demo
