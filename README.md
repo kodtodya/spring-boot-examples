@@ -27,7 +27,8 @@
 - Embedded tomcat configuration
 - Spring boot Annotations
 - Spring Boot Exception handling API
-- Spring Rest with spring boot
+
+:heavy_check_mark: Spring Rest with spring boot - spring-boot-rest-service
 - Actuator
 - Interceptor
 - Servlet Filter
