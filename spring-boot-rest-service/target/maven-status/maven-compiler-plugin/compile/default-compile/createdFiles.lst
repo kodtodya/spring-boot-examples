@@ -1,0 +1,9 @@
+com/kodtodya/practice/service/WelcomeService.class
+com/kodtodya/practice/domain/Training$TrainingBuilder.class
+com/kodtodya/practice/RestfulBootApplication.class
+com/kodtodya/practice/repository/TrainingRepository.class
+com/kodtodya/practice/controller/WelcomeController.class
+com/kodtodya/practice/domain/Training.class
+com/kodtodya/practice/controller/TrainingController.class
+com/kodtodya/practice/repository/EntryRepository.class
+com/kodtodya/practice/service/TrainingService.class
