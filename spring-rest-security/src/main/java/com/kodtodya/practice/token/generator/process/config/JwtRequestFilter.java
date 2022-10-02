@@ -1,6 +1,6 @@
 package com.kodtodya.practice.token.generator.process.config;
 
-import com.kodtodya.practice.token.generator.process.services.JwtUserDetailsService;
+import com.kodtodya.practice.token.generator.process.service.JwtUserDetailsService;
 import io.jsonwebtoken.ExpiredJwtException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

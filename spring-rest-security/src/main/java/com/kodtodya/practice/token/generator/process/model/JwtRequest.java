@@ -1,4 +1,4 @@
-package com.kodtodya.practice.token.generator.process.models;
+package com.kodtodya.practice.token.generator.process.model;
 
 import java.io.Serializable;
 

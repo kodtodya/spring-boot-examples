@@ -10,12 +10,12 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="spring-rest-security" target="1.8" />
+      <module name="spring-rest-security" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="spring-rest-security" options="-parameters" />
+      <module name="spring-rest-security" options="" />
     </option>
   </component>
 </project>

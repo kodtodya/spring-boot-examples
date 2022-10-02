@@ -1,10 +1,9 @@
 package com.kodtodya.practice.ximpl;
 
-        // Look up authorities, resourceIds and scopes based on clientId
-
+// Look up authorities, resourceIds and scopes based on clientId
 import com.kodtodya.practice.token.generator.process.config.JwtTokenUtil;
-import com.kodtodya.practice.token.generator.process.models.JwtRequest;
-import com.kodtodya.practice.token.generator.process.models.JwtResponse;
+import com.kodtodya.practice.token.generator.process.model.JwtRequest;
+import com.kodtodya.practice.token.generator.process.model.JwtResponse;
 import io.jsonwebtoken.ExpiredJwtException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;

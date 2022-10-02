@@ -1,4 +1,4 @@
-package com.kodtodya.practice.token.generator.process.services;
+package com.kodtodya.practice.token.generator.process.service;
 
 import java.util.ArrayList;
 

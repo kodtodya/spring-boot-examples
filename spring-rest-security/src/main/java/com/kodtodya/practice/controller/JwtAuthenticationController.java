@@ -1,9 +1,9 @@
-package com.kodtodya.practice.controllers;
+package com.kodtodya.practice.controller;
 
 import com.kodtodya.practice.token.generator.process.config.JwtTokenUtil;
-import com.kodtodya.practice.token.generator.process.models.JwtRequest;
-import com.kodtodya.practice.token.generator.process.models.JwtResponse;
-import com.kodtodya.practice.token.generator.process.services.JwtUserDetailsService;
+import com.kodtodya.practice.token.generator.process.model.JwtRequest;
+import com.kodtodya.practice.token.generator.process.model.JwtResponse;
+import com.kodtodya.practice.token.generator.process.service.JwtUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
