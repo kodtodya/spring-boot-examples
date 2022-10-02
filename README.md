@@ -40,6 +40,7 @@
 - Scheduing
 
 :heavy_check_mark: Spring Rest with security(token store implementation)
+
 :heavy_check_mark: Spring Boot with JMS connectivity - spring-boot-artemis-service
 
 :heavy_check_mark: Spring Boot with Camel(couple of endpoints to be covered - File) - demo-pgp-encryption
