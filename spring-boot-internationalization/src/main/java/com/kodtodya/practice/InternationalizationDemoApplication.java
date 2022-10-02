@@ -1,4 +1,4 @@
-package com.kodtodya.sessions;
+package com.kodtodya.practice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,5 +9,4 @@ public class InternationalizationDemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(InternationalizationDemoApplication.class, args);
 	}
-
 }

@@ -1,0 +1,32 @@
+02-10-2022 22:05:21.376 [main] INFO  c.k.p.InternationalizationDemoApplication.logStarting - Starting InternationalizationDemoApplication using Java 17.0.2 on codebook with PID 1361677 (/home/kodtodya/_system/_codebase/_personal/spring-boot-examples/spring-boot-internationalization/target/classes started by kodtodya in /home/kodtodya/_system/_codebase/_personal/spring-boot-examples/spring-boot-internationalization)
+02-10-2022 22:05:21.378 [main] INFO  c.k.p.InternationalizationDemoApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+02-10-2022 22:05:21.891 [main] WARN  io.undertow.websockets.jsr.handleDeployment - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+02-10-2022 22:05:21.910 [main] INFO  io.undertow.servlet.log - Initializing Spring embedded WebApplicationContext
+02-10-2022 22:05:21.910 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 500 ms
+02-10-2022 22:05:22.128 [main] INFO  io.undertow.start - starting server: Undertow - 2.2.19.Final
+02-10-2022 22:05:22.132 [main] INFO  org.xnio.<clinit> - XNIO version 3.8.7.Final
+02-10-2022 22:05:22.137 [main] INFO  org.xnio.nio.<clinit> - XNIO NIO Implementation Version 3.8.7.Final
+02-10-2022 22:05:22.194 [main] INFO  org.jboss.threads.<clinit> - JBoss Threads version 3.1.0.Final
+02-10-2022 22:05:22.230 [main] INFO  o.s.b.w.e.undertow.UndertowWebServer.start - Undertow started on port(s) 8080 (http)
+02-10-2022 22:05:22.240 [main] INFO  c.k.p.InternationalizationDemoApplication.logStarted - Started InternationalizationDemoApplication in 1.068 seconds (JVM running for 1.327)
+02-10-2022 22:05:31.160 [XNIO-1 task-1] INFO  io.undertow.servlet.log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+02-10-2022 22:05:31.160 [XNIO-1 task-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+02-10-2022 22:05:31.161 [XNIO-1 task-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 1 ms
+02-10-2022 22:06:20.703 [SpringApplicationShutdownHook] INFO  io.undertow.stop - stopping server: Undertow - 2.2.19.Final
+02-10-2022 22:06:20.706 [SpringApplicationShutdownHook] INFO  io.undertow.servlet.log - Destroying Spring FrameworkServlet 'dispatcherServlet'
+02-10-2022 22:06:25.284 [main] INFO  c.k.p.InternationalizationDemoApplication.logStarting - Starting InternationalizationDemoApplication using Java 17.0.2 on codebook with PID 1362120 (/home/kodtodya/_system/_codebase/_personal/spring-boot-examples/spring-boot-internationalization/target/classes started by kodtodya in /home/kodtodya/_system/_codebase/_personal/spring-boot-examples/spring-boot-internationalization)
+02-10-2022 22:06:25.286 [main] INFO  c.k.p.InternationalizationDemoApplication.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+02-10-2022 22:06:25.758 [main] WARN  io.undertow.websockets.jsr.handleDeployment - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+02-10-2022 22:06:25.778 [main] INFO  io.undertow.servlet.log - Initializing Spring embedded WebApplicationContext
+02-10-2022 22:06:25.778 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 464 ms
+02-10-2022 22:06:25.994 [main] INFO  io.undertow.start - starting server: Undertow - 2.2.19.Final
+02-10-2022 22:06:25.998 [main] INFO  org.xnio.<clinit> - XNIO version 3.8.7.Final
+02-10-2022 22:06:26.005 [main] INFO  org.xnio.nio.<clinit> - XNIO NIO Implementation Version 3.8.7.Final
+02-10-2022 22:06:26.056 [main] INFO  org.jboss.threads.<clinit> - JBoss Threads version 3.1.0.Final
+02-10-2022 22:06:26.080 [main] INFO  o.s.b.w.e.undertow.UndertowWebServer.start - Undertow started on port(s) 8080 (http)
+02-10-2022 22:06:26.087 [main] INFO  c.k.p.InternationalizationDemoApplication.logStarted - Started InternationalizationDemoApplication in 1.018 seconds (JVM running for 1.312)
+02-10-2022 22:06:29.393 [XNIO-1 task-1] INFO  io.undertow.servlet.log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+02-10-2022 22:06:29.394 [XNIO-1 task-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+02-10-2022 22:06:29.395 [XNIO-1 task-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 1 ms
+02-10-2022 22:10:58.875 [SpringApplicationShutdownHook] INFO  io.undertow.stop - stopping server: Undertow - 2.2.19.Final
+02-10-2022 22:10:58.882 [SpringApplicationShutdownHook] INFO  io.undertow.servlet.log - Destroying Spring FrameworkServlet 'dispatcherServlet'

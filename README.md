@@ -5,12 +5,40 @@
 `Spring Boot` Examples to illustrate the `Spring-boot` concepts. This repository contains `Java-8` and `Java-11` examples. Please find the list as below:
 
 ### Java-8 Applications:
-- ArtemisService
 - angular-spring-boot
 - restful-boot
 
 ### Java-11 Applications:
 - spring-boot-logging
 - interceptor-demo
-- internationalization-demo
 - filters-demo
+
+
+## Introduction to Spring Boot
+- Why spring boot? What is micro-service?
+- Bootstrapping
+- Code structure
+
+## Practicals (Java-11 and Java-17 Compliant)
+- Runners
+- Application properties
+- Logging
+- Embedded tomcat and it's need
+- Embedded tomcat configuration
+- Spring boot Annotations
+- Spring Boot Exception handling API
+- Spring Rest with spring boot
+- Actuator
+- Interceptor
+- Servlet Filter
+- Encryption using PGP - demo-pgp-encryption
+- CORS support
+- Internationalization - spring-boot-internationalization
+- Scheduing
+- Spring Rest with security(token store implementation)
+- Spring Boot with JMS connectivity - spring-boot-artemis-service
+- Spring Boot with Camel(couple of endpoints to be covered - File) - demo-pgp-encryption
+- Eureka server
+- Unit testcase(junit 5)
+- Spring Boot unint testing with Mockito
+

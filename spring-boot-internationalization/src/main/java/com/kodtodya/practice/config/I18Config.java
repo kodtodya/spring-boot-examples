@@ -1,4 +1,4 @@
-package com.kodtodya.sessions.config;
+package com.kodtodya.practice.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
