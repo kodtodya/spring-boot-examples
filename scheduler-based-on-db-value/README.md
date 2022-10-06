@@ -10,9 +10,22 @@ You'll know:
 - Way to use Spring Data JPA to interact with H2 Database
 - Way to use scheduler works
 
+### Technical Details
+In this project, we are going to use below set of versions for demonstrations.
+
+    Spring Boot - 2.7.4
+    Spring - 5.3.23
+    Lombok - 1.18.24
+
+### Building
+
+The example can be built with
+
+    mvn clean install
+
 ## Run Spring Boot application
 
-Run application as spring boot app
+Run application as spring boot app or using command line -> `mvn spring-boot:run`
 
 ## Till this point, you won't find any difference as same data you inserted will be visible
 

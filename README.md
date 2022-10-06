@@ -44,7 +44,7 @@
 
 :heavy_check_mark: Internationalization - spring-boot-internationalization
 
-- Scheduing
+:heavy_check_mark: Scheduing - scheduler-based-on-db-value
 
 :heavy_check_mark: Spring Rest with security(token store implementation)
 
