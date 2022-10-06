@@ -1,4 +1,4 @@
-package com.kodtodya.practice.logging.demo.services;
+package com.kodtodya.practice.services;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

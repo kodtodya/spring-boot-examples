@@ -1,4 +1,4 @@
-package com.kodtodya.practice.logging.demo.services;
+package com.kodtodya.practice.services;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Lazy;

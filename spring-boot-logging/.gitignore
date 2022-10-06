@@ -1,6 +1,7 @@
 ### Default ###
 /target/
 !.mvn/wrapper/maven-wrapper.jar
+*.iml
 
 ### STS ###
 .apt_generated
@@ -10,13 +11,11 @@
 .settings
 .springBeans
 .sts4-cache
-*.iml
 
 
 # Created by https://www.gitignore.io/api/git,java,maven,eclipse,windows
 
 ### Eclipse ###
-
 .metadata
 bin/
 tmp/

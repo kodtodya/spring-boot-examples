@@ -1,6 +1,6 @@
-package com.kodtodya.practice.logging.demo.controllers;
+package com.kodtodya.practice.controllers;
 
-import com.kodtodya.practice.logging.demo.services.GreetingsService;
+import com.kodtodya.practice.services.GreetingsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

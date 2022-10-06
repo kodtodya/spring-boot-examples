@@ -1,8 +1,0 @@
-logging:
-  level:
-    root: WARN
-    com.kodtodya: TRACE
-
-servers:
-  port: 8080
-  address: 0.0.0.0

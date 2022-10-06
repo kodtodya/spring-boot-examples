@@ -21,9 +21,11 @@
 
 ## Practicals (Java-11 and Java-17 Compliant)
 :heavy_check_mark: Runners - spring-boot-application-runner, spring-boot-commandline-runner
+
 :heavy_check_mark: Application properties
 
-- Logging
+:heavy_check_mark: Logging - spring-boot-logging
+
 - Embedded tomcat and it's need
 - Embedded tomcat configuration
 - Spring boot Annotations
@@ -31,7 +33,8 @@
 
 :heavy_check_mark: Spring Rest with spring boot - spring-boot-rest-service
 
-- Actuator
+:heavy_check_mark: Actuator - spring-boot-logging
+
 - Interceptor
 - Servlet Filter
 

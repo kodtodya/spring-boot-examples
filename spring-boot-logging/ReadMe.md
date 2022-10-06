@@ -1,6 +1,19 @@
 # spring-boot-logging demo 
 Follow the below instructions to have smooth execution of this application.
 
+### Technical Details
+In this project, we are going to use below set of versions for demonstrations.
+
+    Spring Boot - 2.7.4
+    Spring - 5.3.23
+    Lombok - 1.18.24
+
+### Building
+
+The example can be built with
+
+    mvn clean install
+
 ## Logger
 1. Copy this project to your local machine
 2. Build thi project using `mvn clean install -DskipTests` command
@@ -14,7 +27,7 @@ Follow the below instructions to have smooth execution of this application.
 ## Actuator
 9. This demo application also provides the demo of actuator along with logger.
 10. Please open [`http://localhost:8080/actuator`](http://localhost:8080/actuator) in browser.
-11. You will be asked to provide the username and password. Username is `user` and password be be printed in logs at this time of booting application.
+11. You will be asked to provide the username and password. Username is `user` and password will be printed in logs at this time of booting application.
 
 e.g. Using generated security password: `700e2699-f4b5-4a5a-9aee-98810d452e88`
 12. Enter the credentials and check the details of actuator endpoints. Below snippet has few set of endpoints. Copy the URL of each endpoint and check the details.
@@ -115,7 +128,7 @@ e.g. Using generated security password: `700e2699-f4b5-4a5a-9aee-98810d452e88`
 13. This application is also demo of security. 
 14. We have configured basic security to actuator endpoints.
 15. We can verify the security using Step-11.
-16. If you dont want security in your application, please remove `security-starter` from pom.xml
+16. If you don't want security in your application, please remove `security-starter` from pom.xml
 and also change below config to application.properties
 
 ```
