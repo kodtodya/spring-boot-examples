@@ -20,8 +20,9 @@
 - Code structure
 
 ## Practicals (Java-11 and Java-17 Compliant)
-- Runners
-- Application properties
+:heavy_check_mark: Runners - spring-boot-application-runner, spring-boot-commandline-runner
+:heavy_check_mark: Application properties
+
 - Logging
 - Embedded tomcat and it's need
 - Embedded tomcat configuration
@@ -29,14 +30,17 @@
 - Spring Boot Exception handling API
 
 :heavy_check_mark: Spring Rest with spring boot - spring-boot-rest-service
+
 - Actuator
 - Interceptor
 - Servlet Filter
 
 :heavy_check_mark: Encryption using PGP - demo-pgp-encryption
+
 - CORS support
 
 :heavy_check_mark: Internationalization - spring-boot-internationalization
+
 - Scheduing
 
 :heavy_check_mark: Spring Rest with security(token store implementation)
@@ -44,6 +48,7 @@
 :heavy_check_mark: Spring Boot with JMS connectivity - spring-boot-artemis-service
 
 :heavy_check_mark: Spring Boot with Camel(couple of endpoints to be covered - File) - demo-pgp-encryption
+
 - Eureka server
 - Unit testcase(junit 5)
 - Spring Boot unint testing with Mockito

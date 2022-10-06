@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.kodtodya.practice</groupId>
-    <artifactId>spring-rest-security</artifactId>
+    <artifactId>spring-boot-commandline-runner</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>spring-rest-security</name>
-    <description>Spring Boot demonstration with Security</description>
+    <name>spring-boot-commandline-runner</name>
+    <description>Demo project for Spring Boot Command-Line Runner</description>
 
     <properties>
         <java.version>11</java.version>
         <spring-boot.version>2.7.4</spring-boot.version>
-        <spring-security-oauth2.version>2.5.2.RELEASE</spring-security-oauth2.version>
-        <spring-cloud-oauth2.version>2.2.5.RELEASE</spring-cloud-oauth2.version>
-        <jakarta-xml.version>4.0.0</jakarta-xml.version>
-        <jaxb.version>4.0.0</jaxb.version>
+        <lombok.version>1.18.24</lombok.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -36,8 +32,6 @@
     </dependencyManagement>
 
     <dependencies>
-
-        <!-- spring mvc, rest -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -56,41 +50,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-actuator</artifactId>
         </dependency>
-
-        <!-- spring security -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.security.oauth</groupId>
-            <artifactId>spring-security-oauth2</artifactId>
-            <version>${spring-security-oauth2.version}</version>
-        </dependency>
-        <!--<dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-oauth2</artifactId>
-            <version>${spring-cloud-oauth2.version}</version>
-        </dependency>-->
-
-        <dependency>
-            <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt</artifactId>
-            <version>0.9.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>jakarta.xml.bind</groupId>
-            <artifactId>jakarta.xml.bind-api</artifactId>
-            <version>${jakarta-xml.version}</version>
-        </dependency>
-
-        <!-- Runtime, com.sun.xml.bind module -->
-        <dependency>
-            <groupId>org.glassfish.jaxb</groupId>
-            <artifactId>jaxb-runtime</artifactId>
-            <version>${jaxb.version}</version>
-        </dependency>
     </dependencies>
 
     <build>
@@ -98,9 +57,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <addResources>true</addResources>
-                </configuration>
             </plugin>
         </plugins>
     </build>
