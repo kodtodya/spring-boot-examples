@@ -1,6 +1,6 @@
-# Spring Boot with Interceptor
+# Spring Boot with Filter
 
-In this example, we're going to see how to write interceptor in Spring Boot REST API implementation.
+In this example, we're going to see how to write filter along with interceptor in Spring Boot REST API implementation.
 
 You'll know:
 

@@ -29,7 +29,7 @@
 - Embedded tomcat and it's need
 - Embedded tomcat configuration
 - Spring boot Annotations
-- Spring Boot Exception handling API
+:heavy_check_mark: Spring Boot Exception handling API - spring-boot-filters
 
 :heavy_check_mark: Spring Rest with spring boot - spring-boot-rest-service
 
@@ -37,11 +37,11 @@
 
 :heavy_check_mark: Interceptor - spring-boot-interceptor
 
-- Servlet Filter
+:heavy_check_mark: Servlet Filter - spring-boot-filters
 
 :heavy_check_mark: Encryption using PGP - demo-pgp-encryption
 
-- CORS support
+:heavy_check_mark: CORS support - spring-boot-filters
 
 :heavy_check_mark: Internationalization - spring-boot-internationalization
 
@@ -53,7 +53,8 @@
 
 :heavy_check_mark: Spring Boot with Camel(couple of endpoints to be covered - File) - demo-pgp-encryption
 
-- Eureka server
+:heavy_check_mark: Eureka server - spring-boot-filters
+
 - Unit testcase(junit 5)
 - Spring Boot unint testing with Mockito
 
