@@ -35,7 +35,8 @@
 
 :heavy_check_mark: Actuator - spring-boot-logging
 
-- Interceptor
+:heavy_check_mark: Interceptor - spring-boot-interceptor
+
 - Servlet Filter
 
 :heavy_check_mark: Encryption using PGP - demo-pgp-encryption
