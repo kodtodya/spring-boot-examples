@@ -17,7 +17,7 @@
 :heavy_check_mark: Logging - spring-boot-logging
 
 - Embedded tomcat and it's need
-- Embedded tomcat configuration
+- (Embedded tomcat configuration)[https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html]. Please lookup for `server.tomcat.* `
 - Spring boot Annotations
 
 :heavy_check_mark: Spring Boot Exception handling API - spring-boot-filters
