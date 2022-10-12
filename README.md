@@ -4,16 +4,6 @@
 
 `Spring Boot` Examples to illustrate the `Spring-boot` concepts. This repository contains `Java-8` and `Java-11` examples. Please find the list as below:
 
-### Java-8 Applications:
-- angular-spring-boot
-- restful-boot
-
-### Java-11 Applications:
-- spring-boot-logging
-- interceptor-demo
-- filters-demo
-
-
 ## Introduction to Spring Boot
 - Why spring boot? What is micro-service?
 - Bootstrapping
@@ -29,6 +19,7 @@
 - Embedded tomcat and it's need
 - Embedded tomcat configuration
 - Spring boot Annotations
+
 :heavy_check_mark: Spring Boot Exception handling API - spring-boot-filters
 
 :heavy_check_mark: Spring Rest with spring boot - spring-boot-rest-service
