@@ -199,7 +199,7 @@ dependency-reduced-pom.xml
 .gradle
 README.html
 *.iml
-.idea
+.idea/*
 .exercism
 /logs/*
 /logs

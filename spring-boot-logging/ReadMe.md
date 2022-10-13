@@ -140,6 +140,18 @@ management.security.enabled=false
 #security.user.password=admin
 ```
 17. We can also add the additional security features based on our requirement. 
+
+## Appendix
+Tomcat Server Config:
+- [common-application-properties](https://docs.spring.io/spring-boot/docs/2.0.3.RELEASE/reference/html/common-application-properties.html)
+- [howto-configure-webserver](https://docs.spring.io/spring-boot/docs/2.0.3.RELEASE/reference/html/howto-embedded-web-servers.html#howto-configure-webserver)
+
+Logging Config:
+- [Logging](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.logging)
+- [How to configure pattern & layout](https://logback.qos.ch/manual/layouts.html)
+
+Starter Packs:
+- [Starter Packs](https://docs.spring.io/spring-boot/docs/2.5.0/reference/htmlsingle/#using.build-systems.starters)
 ***
 Thank you for checking out. :)
 ***
