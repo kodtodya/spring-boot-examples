@@ -18,6 +18,8 @@ The example can be built with
 ### Running the example in your local
 
     spring-boot:run -Dspring-boot.run.arguments=--priceOne.pound=5
+    
+    Windows user -> mvn spring-boot:run -D"spring-boot.run.arguments=--priceOne.pound=5"
 
 ### Test it using Program Arguments in Run Configurations
 -DpriceOne.pound=5
