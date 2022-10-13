@@ -2,9 +2,9 @@
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8d0c93cf30dd45fd929209f6971ba008)](https://app.codacy.com/app/kodtodya/spring-boot-examples?utm_source=github.com&utm_medium=referral&utm_content=kodtodya/spring-boot-examples&utm_campaign=Badge_Grade_Dashboard)
 
-`Spring Boot` Examples to illustrate the `Spring-boot` concepts. This repository contains `Java-8` and `Java-11` examples. Please find the list as below:
+`Spring Boot` Examples to illustrate the `Spring-boot` concepts. This repository contains `Java-11` and `Java-17` compliant examples. Please find the list of topics along with respective examples in hyperlink:
 
-## Introduction to Spring Boot
+## Introduction to Spring Boot(Theory part)
 - Why spring boot? What is micro-service?
 - Bootstrapping
 - Code structure
