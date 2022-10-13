@@ -8,44 +8,45 @@
 - Why spring boot? What is micro-service?
 - Bootstrapping
 - Code structure
+- Embedded tomcat and it's need
+- Spring boot Annotations
 
 ## Practicals (Java-11 and Java-17 Compliant)
-:heavy_check_mark: Runners - spring-boot-application-runner, spring-boot-commandline-runner
+:heavy_check_mark: Runners - [spring-boot-application-runner](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-application-runner), [spring-boot-commandline-runner](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-commandline-runner)
 
 :heavy_check_mark: Application properties
 
-:heavy_check_mark: Logging - spring-boot-logging
+:heavy_check_mark: Logging - [spring-boot-logging](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-logging)
 
-- Embedded tomcat and it's need
-- (Embedded tomcat configuration)[https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html]. Please lookup for `server.tomcat.* `
-- Spring boot Annotations
+:heavy_check_mark: [Embedded tomcat configuration](https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html). Please lookup for `server.tomcat.*` - [spring-boot-logging](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-logging)
 
-:heavy_check_mark: Spring Boot Exception handling API - spring-boot-filters
+:heavy_check_mark: Spring Boot Exception handling API - [spring-boot-filters](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-filters)
 
-:heavy_check_mark: Spring Rest with spring boot - spring-boot-rest-service
+:heavy_check_mark: Spring Rest with spring boot - [spring-boot-rest-service](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-rest-service)
 
-:heavy_check_mark: Actuator - spring-boot-logging
+:heavy_check_mark: Actuator - [spring-boot-logging](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-logging)
 
-:heavy_check_mark: Interceptor - spring-boot-interceptor
+:heavy_check_mark: Interceptor - [spring-boot-interceptor](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-interceptor)
 
-:heavy_check_mark: Servlet Filter - spring-boot-filters
+:heavy_check_mark: Servlet Filter - [spring-boot-filters](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-filters)
 
-:heavy_check_mark: Encryption using PGP - demo-pgp-encryption
+:heavy_check_mark: Encryption using PGP - [demo-pgp-encryption](https://github.com/kodtodya/spring-boot-examples/tree/master/demo-pgp-encryption)
 
-:heavy_check_mark: CORS support - spring-boot-filters
+:heavy_check_mark: CORS support - [spring-boot-filters](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-filters)
 
 :heavy_check_mark: Internationalization - spring-boot-internationalization
 
-:heavy_check_mark: Scheduing - scheduler-based-on-db-value
+:heavy_check_mark: Scheduing - [scheduler-based-on-db-value](https://github.com/kodtodya/spring-boot-examples/tree/master/scheduler-based-on-db-value)
 
-:heavy_check_mark: Spring Rest with security(token store implementation)
+:heavy_check_mark: Spring Rest with security(token store implementation) - [spring-rest-security](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-rest-security)
 
-:heavy_check_mark: Spring Boot with JMS connectivity - spring-boot-artemis-service
+:heavy_check_mark: Spring Boot with JMS connectivity - [spring-boot-artemis-service](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-artemis-service)
 
-:heavy_check_mark: Spring Boot with Camel(couple of endpoints to be covered - File) - demo-pgp-encryption
+:heavy_check_mark: Spring Boot with Camel(couple of endpoints to be covered - File) - [demo-pgp-encryption](https://github.com/kodtodya/spring-boot-examples/tree/master/demo-pgp-encryption)
 
-:heavy_check_mark: Eureka server - spring-boot-filters
+:heavy_check_mark: Eureka server - [spring-boot-filters](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-filters)
 
-- Unit testcase(junit 5)
-- Spring Boot unint testing with Mockito
+:heavy_check_mark: Unit testcase(junit 5) - [spring-boot-filters](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-filters)
+
+:heavy_check_mark: Spring Boot unint testing with Mockito - [spring-boot-filters](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-filters)
 
