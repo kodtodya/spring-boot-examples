@@ -3,26 +3,26 @@ package com.kodtodya.practice.controller;
 import com.kodtodya.practice.domain.Training;
 import com.kodtodya.practice.services.TrainingService;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.BDDMockito;
-import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@ExtendWith(SpringExtension.class)
-@WebMvcTest
-//@SpringBootTest
+import static org.hamcrest.Matchers.hasSize;
+import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+@SpringBootTest
+@AutoConfigureMockMvc
 public class TrainingServiceControllerTests {
 
     private final static String TRAINING_URI = "/training";
@@ -39,13 +39,17 @@ public class TrainingServiceControllerTests {
         Training training = new Training("kafka", 3, "java, jms");
 
         // insert training
-        BDDMockito.given(trainingService.storeTraining(training)).willReturn(true);
+        when(trainingService.storeTraining(training)).thenReturn(true);
+
         // validate
         this.mockMvc
-                .perform(MockMvcRequestBuilders.post(TRAINING_URI)
-                        .contentType(MediaType.APPLICATION_JSON))
+                .perform(
+                        post(TRAINING_URI).contentType(MediaType.APPLICATION_JSON)
+                )
                 .andDo(MockMvcResultHandlers.print())
-                .andExpect(mvcResult -> {mvcResult.getResponse().equals(true);});
+                .andExpect(mvcResult -> {
+                    mvcResult.getResponse().equals(true);
+                });
     }
 
     @Test
@@ -64,20 +68,20 @@ public class TrainingServiceControllerTests {
         trainingList.add(training3);
         trainingList.add(training4);
 
-        // insert training
-        Mockito.when(trainingService.storeTraining(training0)).thenReturn(true);
-        Mockito.when(trainingService.storeTraining(training1)).thenReturn(true);
-        Mockito.when(trainingService.storeTraining(training2)).thenReturn(true);
-        Mockito.when(trainingService.storeTraining(training3)).thenReturn(true);
-        Mockito.when(trainingService.storeTraining(training4)).thenReturn(true);
+        // mock training service for retrieval method
+        when(trainingService.retrieveTrainings()).thenReturn(trainingList);
 
-        // validate
+        // invoke and validate
         this.mockMvc
-                .perform(MockMvcRequestBuilders.get(TRAINING_URI)
-                        .contentType(MediaType.APPLICATION_JSON))
-                .andDo(MockMvcResultHandlers.print()).andExpect(MockMvcResultMatchers.status().isOk())
-                .andExpect(MockMvcResultMatchers.status().is(200))
-                //.andExpect(MockMvcResultMatchers.jsonPath("$", Matchers.hasSize(5)))
-                .andExpect(mvcResult -> {mvcResult.getResponse().equals(trainingList);});
+                .perform(
+                        get(TRAINING_URI).contentType(MediaType.APPLICATION_JSON)
+                )
+                .andDo(MockMvcResultHandlers.print())
+                .andExpect(status().isOk())
+                .andExpect(status().is(200))
+                .andExpect(jsonPath("$", hasSize(5)))
+                .andExpect(mvcResult -> {
+                    mvcResult.getResponse().equals(trainingList);
+                });
     }
 }

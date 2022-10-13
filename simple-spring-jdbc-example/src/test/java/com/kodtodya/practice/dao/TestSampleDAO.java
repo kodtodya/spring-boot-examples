@@ -69,6 +69,8 @@ public class TestSampleDAO {
 
         assertEquals("Person mismatch", bob, dao.getPersonById(bob.getId()));
         assertEquals("Person mismatch", mary, dao.getPersonById(mary.getId()));
+
+        System.out.println("inside tes case..");
     }
 
     @Test
