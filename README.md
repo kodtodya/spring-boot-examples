@@ -14,7 +14,7 @@
 ## Practicals (Java-11 and Java-17 Compliant)
 :heavy_check_mark: Runners - [spring-boot-application-runner](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-application-runner), [spring-boot-commandline-runner](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-commandline-runner)
 
-:heavy_check_mark: Application properties
+:heavy_check_mark: Application properties [spring-boot-encrypted-properties](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-encrypted-properties)
 
 :heavy_check_mark: Logging - [spring-boot-logging](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-logging)
 
