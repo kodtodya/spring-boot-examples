@@ -2,21 +2,37 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.4.1</version>
-        <relativePath/>
-    </parent>
+
     <groupId>com.kodtodya.practice</groupId>
     <artifactId>h2-data-masking-spring-boot-example</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <name>spring-boot-jpa-h2</name>
-    <description>Spring Boot JPA + H2 database example - Rest CRUD Apis</description>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>spring-boot-interceptor</name>
+    <description>spring-boot-interceptor</description>
 
     <properties>
         <java.version>11</java.version>
+        <spring-boot.version>2.7.4</spring-boot.version>
+        <spring-cloud.version>3.1.4</spring-cloud.version>
+        <lombok.version>1.18.24</lombok.version>
+        <junit-jupiter.version>5.9.0</junit-jupiter.version>
+        <mockito.version>2.24.0</mockito.version>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Spring Boot BOM -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <dependencies>
         <dependency>
@@ -47,6 +63,35 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.0</version>
+            </plugin>
         </plugins>
     </build>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Avadhut</name>
+            <email>kodtodya@gmail.com</email>
+            <id>kodtodya</id>
+            <url>https://kodtodya.github.io</url>
+            <roles>
+                <role>Developer</role>
+                <role>Consultant</role>
+                <role>Corporate Trainer</role>
+            </roles>
+            <organization>kodtodya-talks</organization>
+            <organizationUrl>https://kodtodya.github.io/talks</organizationUrl>
+        </developer>
+    </developers>
+
 </project>
