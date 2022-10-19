@@ -13,6 +13,7 @@ public class TrainingController {
 	@Autowired
 	private TrainingService trainingService;
 
+	//@RequestMapping(path = "/training", method = RequestMethod.GET)
 	@GetMapping("/training")
 	public List<Training> retrieveTrainings() {
 		return trainingService.retrieveTrainings();

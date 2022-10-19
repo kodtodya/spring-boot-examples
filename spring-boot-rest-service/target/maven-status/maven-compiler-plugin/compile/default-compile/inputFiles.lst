@@ -1,8 +1,0 @@
-/home/kodtodya/_system/_codebase/_personal/spring-boot-examples/spring-boot-rest-service/src/main/java/com/kodtodya/practice/RestfulBootApplication.java
-/home/kodtodya/_system/_codebase/_personal/spring-boot-examples/spring-boot-rest-service/src/main/java/com/kodtodya/practice/controller/WelcomeController.java
-/home/kodtodya/_system/_codebase/_personal/spring-boot-examples/spring-boot-rest-service/src/main/java/com/kodtodya/practice/domain/Training.java
-/home/kodtodya/_system/_codebase/_personal/spring-boot-examples/spring-boot-rest-service/src/main/java/com/kodtodya/practice/repository/TrainingRepository.java
-/home/kodtodya/_system/_codebase/_personal/spring-boot-examples/spring-boot-rest-service/src/main/java/com/kodtodya/practice/service/TrainingService.java
-/home/kodtodya/_system/_codebase/_personal/spring-boot-examples/spring-boot-rest-service/src/main/java/com/kodtodya/practice/controller/TrainingController.java
-/home/kodtodya/_system/_codebase/_personal/spring-boot-examples/spring-boot-rest-service/src/main/java/com/kodtodya/practice/repository/EntryRepository.java
-/home/kodtodya/_system/_codebase/_personal/spring-boot-examples/spring-boot-rest-service/src/main/java/com/kodtodya/practice/service/WelcomeService.java

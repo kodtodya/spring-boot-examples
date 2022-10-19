@@ -44,11 +44,11 @@ public class TrainingRepository implements EntryRepository{
     public String update(Training training) {
         logger.info("/inside the TrainingRepository.search()");
         if (training.getPrerequisite().isBlank() || training.getPrerequisite().isEmpty()) {
-            this.trainingList.get(index).setPrerequisite(training.getPrerequisite());
+            this.trainingList.get(training.getId()).setPrerequisite(training.getPrerequisite());
         }
         if (training.getDuration() > 0) {
-            this.trainingList.get(index).setDuration(training.getDuration());
+            this.trainingList.get(training.getId()).setDuration(training.getDuration());
         }
-        return this.trainingList.get(index).toString();
+        return this.trainingList.get(training.getId()).toString();
     }
 }
