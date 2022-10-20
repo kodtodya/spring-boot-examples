@@ -5,6 +5,7 @@ import com.kodtodya.practice.token.generator.process.model.JwtRequest;
 import com.kodtodya.practice.token.generator.process.model.JwtResponse;
 import com.kodtodya.practice.token.generator.process.service.JwtUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -23,6 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class JwtAuthenticationController {
 
 	@Autowired
+	@Qualifier("authenticationManagerBean")
 	private AuthenticationManager authenticationManager;
 
 	@Autowired
