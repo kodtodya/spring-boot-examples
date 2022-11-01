@@ -42,7 +42,9 @@
 
 :heavy_check_mark: Spring Rest with security(oauth2 authorization server) - [spring-boot-oauth-auth-server](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-oauth-auth-server)
 
-:heavy_check_mark: Spring Boot with JMS connectivity - [spring-boot-artemis-service](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-artemis-service)
+:heavy_check_mark: Spring Boot with Embedded JMS Broker connectivity - [spring-boot-artemis-service](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-artemis-service)
+
+:heavy_check_mark: Spring Boot with External JMS Broker connectivity - [spring-boot-external-artemis-service](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-external-artemis-service)
 
 :heavy_check_mark: Spring Boot with Camel(couple of endpoints to be covered - File) - [demo-pgp-encryption](https://github.com/kodtodya/spring-boot-examples/tree/master/demo-pgp-encryption)
 

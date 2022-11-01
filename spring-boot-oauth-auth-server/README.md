@@ -54,3 +54,7 @@ Linux User:
 ### Relevant Articles:
 
 - [Spring Security OAuth Authorization Server](https://www.baeldung.com/spring-security-oauth-auth-server)
+
+### OAuth-2 with Authorization server, Resource server and client
+
+![oauth-2-flow.png](oauth-2-flow.png)
