@@ -7,7 +7,7 @@ In this project, we are going to use below set of versions for demonstrations.
 
     Spring Boot - 3.0.0-RC1
     Spring - 6.0.0-RC2
-    Apache Kafka - 2.19.1
+    Apache Kafka - 3.3.1
 
 ### Building
 
