@@ -50,5 +50,9 @@
 
 :heavy_check_mark: Unit testcase(junit 5) - [spring-boot-filters](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-filters)
 
-:heavy_check_mark: Spring Boot unint testing with Mockito - [spring-boot-filters](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-filters)
+:heavy_check_mark: Spring Boot unit testing with Mockito - [spring-boot-filters](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-filters)
+
+:heavy_check_mark: Spring Boot Kafka Producer - [spring-boot-kafka-producer-service](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-kafka-producer-service)
+
+:heavy_check_mark: Spring Boot Kafka Consumer - [spring-boot-kafka-consumer-service](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-kafka-consumer-service)
 
