@@ -48,6 +48,8 @@
 
 :heavy_check_mark: Spring Boot with Camel(couple of endpoints to be covered - File) - [demo-pgp-encryption](https://github.com/kodtodya/spring-boot-examples/tree/master/demo-pgp-encryption)
 
+:heavy_check_mark: Eureka Discovery server and discovery client - [eureka-server-discovery-service](https://github.com/kodtodya/spring-boot-examples/tree/master/eureka-server-discovery-service)
+
 :heavy_check_mark: Eureka server - [spring-boot-filters](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-filters)
 
 :heavy_check_mark: Unit testcase(junit 5) - [spring-boot-filters](https://github.com/kodtodya/spring-boot-examples/tree/master/spring-boot-filters)
