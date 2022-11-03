@@ -1,0 +1,12 @@
+# Appendix
+- [What is Service-Oriented Architecture](https://medium.com/@SoftwareDevelopmentCommunity/what-is-service-oriented-architecture-fa894d11a7ec)
+- [Command Line Runner](https://www.javacodegeeks.com/2019/09/spring-boot-commandlinerunner-and-applicationrunner.html)
+- [Application Runner](https://dzone.com/articles/spring-boot-applicationrunner-and-commandlinerunne)
+- [Jasypt Online Tool](https://www.devglan.com/online-tools/jasypt-online-encryption-decryption)
+- [Spring Boot Dev tools](https://www.baeldung.com/spring-boot-devtools)
+- [Spring Boot Actuators](https://www.baeldung.com/spring-boot-actuators)
+- [Spring Boot Actuators](https://www.javatpoint.com/spring-boot-actuator)
+- [Spring Boot Actuators](https://www.geeksforgeeks.org/spring-boot-actuator/)
+- [Spring Boot Support](https://spring.io/projects/spring-boot#support)
+- [PGP Key Generation](https://www.encryptionconsulting.com/how-to-generate-pgp-key-pair/)
+- [Kafka topic creation](https://www.javatpoint.com/creating-kafka-topics)
