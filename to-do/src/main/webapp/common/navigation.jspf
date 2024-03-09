@@ -1,3 +1,5 @@
+<html>
+<body>
 <nav role="navigation" class="navbar navbar-default">
 
 	<div class="navbar-collapse">
@@ -7,5 +9,6 @@
 			<li><a href="https://kodtodya.github.io">kodtodya</a></li>
 		</ul>
 	</div>
-
 </nav>
+</body>
+</html>

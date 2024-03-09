@@ -10,7 +10,6 @@ import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -38,7 +37,6 @@ public class TodoController {
 	@RequestMapping(value = "/add-todo", method = RequestMethod.GET)
 	public String showAddTodoPage(ModelMap model) {
 		model.addAttribute("command", new Todo());
-		//model.addAttribute("todo", new Todo());
 		return "todo.jsp";
 	}
 
@@ -49,13 +47,12 @@ public class TodoController {
 			return "todo.jsp";
 
 		service.addTodo("admin", todo.getDesc(), todo.getTargetDate(), false);
-		model.clear();// to prevent request parameter "name" to be passed
+		model.clear();
 		return "redirect:/list-todos";
 	}
 
 	@GetMapping(value = "/update-todo")
 	public String showUpdateTodoPage(ModelMap model, @RequestParam int id) {
-		//model.addAttribute("todo", service.retrieveTodo(id));
 		model.addAttribute("command", service.retrieveTodo(id));
 		return "todo.jsp";
 	}
@@ -69,14 +66,14 @@ public class TodoController {
 		todo.setUser("admin");
 		service.updateTodo(todo);
 
-		model.clear();// to prevent request parameter "name" to be passed
-		return "redirect:/list-todos.jsp";
+		model.clear();
+		return "redirect:list-todos.jsp";
 	}
 
 	@RequestMapping(value = "/delete-todo", method = RequestMethod.GET)
 	public String deleteTodo(@RequestParam int id) {
 		service.deleteTodo(id);
 
-		return "redirect:/list-todos.jsp";
+		return "redirect:list-todos.jsp";
 	}
 }
