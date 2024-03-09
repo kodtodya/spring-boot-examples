@@ -1,7 +1,7 @@
-package com.kodtodya.practice.todo;
+package com.kodtodya.practice.controller;
 
 import com.kodtodya.practice.model.Todo;
-import com.kodtodya.practice.todo.service.TodoService;
+import com.kodtodya.practice.service.TodoService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
@@ -48,7 +48,7 @@ public class TodoController {
 
 		service.addTodo("admin", todo.getDesc(), todo.getTargetDate(), false);
 		model.clear();
-		return "redirect:/list-todos";
+		return "redirect:list-todos.jsp";
 	}
 
 	@GetMapping(value = "/update-todo")

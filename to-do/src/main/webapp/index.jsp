@@ -10,7 +10,7 @@
 </style>
 <body>
 <div class="container">
-	Welcome ${name}. You are now authenticated.
+	Welcome guest!! You are now authenticated.
 </div>
 </body>
 <%@ include file="common/footer.jspf"%>

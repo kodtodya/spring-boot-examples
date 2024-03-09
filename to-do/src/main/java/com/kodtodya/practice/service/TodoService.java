@@ -1,4 +1,4 @@
-package com.kodtodya.practice.todo.service;
+package com.kodtodya.practice.service;
 
 import java.util.*;
 

@@ -17,7 +17,7 @@
 				<th>Description</th>
 				<th>Date</th>
 				<th>Completed</th>
-				<th></th>
+				<th>Action</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -27,9 +27,9 @@
 					<td><fmt:formatDate pattern="dd/MM/yyyy"
 							value="${todo.targetDate}" /></td>
 					<td>${todo.done}</td>
-					<td><a type="button" class="btn btn-primary"
-						href="update-todo?id=${todo.id}">Edit</a> <a type="button"
-						class="btn btn-warning" href="delete-todo?id=${todo.id}">Delete</a>
+					<td>
+                        <a type="button" class="btn btn-primary" href="update-todo?id=${todo.id}">Edit</a>
+                        <a type="button" class="btn btn-warning" href="delete-todo?id=${todo.id}">Delete</a>
 					</td>
 				</tr>
 			</c:forEach>
