@@ -1,18 +1,16 @@
 package com.kodtodya.practice.repository;
 
-import com.kodtodya.practice.domain.Training;
-
 import java.util.List;
 
-public interface EntryRepository {
+public interface EntryRepository<T> {
 
-        public String store(Training training);
+        public String store(T t);
 
-        public List<Training> retrieve();
+        public List<T> retrieve();
 
         public String search(int id);
 
         public String delete(int id);
 
-        public String update(Training training);
+        public String update(T t);
 }

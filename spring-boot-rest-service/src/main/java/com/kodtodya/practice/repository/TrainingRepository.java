@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class TrainingRepository implements EntryRepository{
+public class TrainingRepository implements EntryRepository<Training> {
     private static final Logger logger = LoggerFactory.getLogger(TrainingRepository.class);
     private List<Training> trainingList = new ArrayList<Training>();
     private int index = -1;
@@ -43,7 +43,7 @@ public class TrainingRepository implements EntryRepository{
     @Override
     public String update(Training training) {
         logger.info("/inside the TrainingRepository.search()");
-        if (training.getPrerequisite().isBlank() || training.getPrerequisite().isEmpty()) {
+        if (!(training.getPrerequisite().isBlank() || training.getPrerequisite().isEmpty())) {
             this.trainingList.get(training.getId()).setPrerequisite(training.getPrerequisite());
         }
         if (training.getDuration() > 0) {

@@ -28,7 +28,8 @@ public class TodoController {
 				dateFormat, false));
 	}
 
-	@GetMapping(value = "/list-todos")
+	//@GetMapping(value = "/list-todos")
+	@RequestMapping(value = "/list-todos", method = RequestMethod.GET)
 	public String showTodosList(ModelMap model) {
 		model.addAttribute("todos", service.retrieveTodos("admin"));
 		return "list-todos.jsp";

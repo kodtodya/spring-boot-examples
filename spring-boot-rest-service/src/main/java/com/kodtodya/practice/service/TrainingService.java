@@ -18,7 +18,7 @@ public class TrainingService {
     private TrainingRepository repo;
 
     public List<Training> retrieveTrainings() {
-        logger.info("/inside the TrainingService.getTrainings()");
+        logger.info("/inside the TrainingService.retrieveTrainings()");
         return repo.retrieve();
     }
 
