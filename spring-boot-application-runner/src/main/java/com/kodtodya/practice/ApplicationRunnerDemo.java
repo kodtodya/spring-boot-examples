@@ -10,13 +10,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ApplicationRunnerDemo implements ApplicationRunner {
 
-	private static Logger logger = LoggerFactory.getLogger(ApplicationRunnerDemo.class);
+	private Logger logger = LoggerFactory.getLogger(ApplicationRunnerDemo.class);
 
 	@Override
 	public void run(final ApplicationArguments args) throws Exception {
-		logger.info(" Total NonOptionArgs: {}", args.getNonOptionArgs().size());
+		logger.info("Total NonOptionArgs: {}", args.getNonOptionArgs().size());
 		args.getNonOptionArgs().forEach( logger::info);
-		logger.info(" Totla OptionArgs: {}", args.getOptionNames().size());
+		logger.info("Total OptionArgs: {}", args.getOptionNames().size());
 		args.getOptionNames().forEach(name -> logger.info("{} = {}",name, args.getOptionValues(name)));
 	}
 
