@@ -11,7 +11,7 @@ import java.util.Arrays;
 @SpringBootApplication
 public class CommandLineRunnerDemo implements CommandLineRunner {
 
-	private static Logger logger = LoggerFactory.getLogger(CommandLineRunnerDemo.class);
+	private Logger logger = LoggerFactory.getLogger(CommandLineRunnerDemo.class);
 
 	public static void main(String[] args) {
 		SpringApplication.run(CommandLineRunnerDemo.class, args);
@@ -19,7 +19,7 @@ public class CommandLineRunnerDemo implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		logger.info(" Total NonOptionArgs: {}", args.length);
+		logger.info("Total NonOptionArgs: {}", args.length);
 		Arrays.stream(args).forEach(name -> logger.info("{} = {}", name, args));
 	}
 }
