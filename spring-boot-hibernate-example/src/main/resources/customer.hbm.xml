@@ -10,9 +10,7 @@
         <property name="firstName">
             <column name="firstName"/>
         </property>
-        <property name="lastName">
-            <column name="lastName"/>
-        </property>
+        <property name="lastName" column="lastName"/>
         <property name="email">
             <column name="email"/>
         </property>
