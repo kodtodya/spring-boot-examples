@@ -14,7 +14,7 @@ import java.util.List;
 
 @RestController
 public class TrainingServiceController {
-    private static final Logger logger = LoggerFactory.getLogger(TrainingRepository.class);
+    private static final Logger logger = LoggerFactory.getLogger(TrainingServiceController.class);
 
     @Autowired
     private TrainingService service;
