@@ -12,12 +12,13 @@ In this project, we are going to use below set of versions for demonstrations.
 ### Building
 
 The example can be built with
-
-    mvn clean install
-
+```shell
+mvn clean install
+```
 ### Running the example in your local
-
-    mvn clean spring-boot:run
+```shell
+mvn clean spring-boot:run
+```
 
 ### Infra setup for Artemis JMS Broker 
 - Download [Apache ActiveMQ Artemis from official website](https://activemq.apache.org/components/artemis/download/)
@@ -34,5 +35,6 @@ The example can be built with
 
 ### Send message to JMS Queue with the help of demo REST API
 Update the message in below common while posting multiple messages.
-
-    curl -X POST -H 'Content-Type: application/json' http://localhost:8080/artemis-demo/send --data "hi, this is first jms message"
+```
+curl -X POST -H 'Content-Type: application/json' http://localhost:8080/artemis-demo/send --data "hi, this is first jms message"
+```
