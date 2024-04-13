@@ -1,4 +1,4 @@
-package com.example.graphqlserver;
+package com.kodtodya.practice.graphql;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
