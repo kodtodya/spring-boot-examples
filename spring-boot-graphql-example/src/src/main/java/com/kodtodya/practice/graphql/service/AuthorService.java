@@ -8,7 +8,7 @@ import java.util.List;
 
 @Service
 public class AuthorService {
-    private final List<Author> authors = new ArrayList<>();
+    private List<Author> authors = new ArrayList<>();
 
     public AuthorService() {
         authors.add(new Author(1, "Joshua", "Bloch"));

@@ -8,7 +8,7 @@ import java.util.List;
 
 @Service
 public class BookService {
-    private final List<Book> books = new ArrayList<>();
+    private List<Book> books = new ArrayList<>();
 
     public BookService() {
         books.add(new Book(1, "Effective Java", 416, 1));

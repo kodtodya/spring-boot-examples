@@ -31,7 +31,7 @@ public class BookController {
     }
 
     @MutationMapping
-    public Book addBook(@Argument Book book, @Argument Author author) {
+    public Book addBook(@Argument Book book) {
         return bookService.addBook(book);
     }
 }
