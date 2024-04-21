@@ -51,3 +51,16 @@ Linux User:
 # View the discovery
 
 - Please click on [Eureka Discovery Server Portal](http://localhost:8761/) to get the details about service discovery.
+
+# Check the metrics configuration
+
+- Pls check the configuration inside application.yml in `spring-eureka-client-school-service` and `spring-eureka-client-student-service` in management node.
+
+# Test the metrics configuration
+
+- Pls invoke http://localhost:9098/actuator url to test `spring-eureka-client-school-service` service metrics.
+- Pls invoke http://localhost:8098/actuator url to test `spring-eureka-client-student-service` service metrics.
+
+# Test rest of the metrics
+
+Once you invoke any of the actuator metrics url, you will see many other URLs specific to respective metrics. Pls invoke those to see the metrics.

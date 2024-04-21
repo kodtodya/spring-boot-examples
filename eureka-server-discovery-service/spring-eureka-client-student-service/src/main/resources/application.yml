@@ -18,8 +18,29 @@ spring:
     name: student-service
   
 management:
+  port: 9000
   security:
     enabled: false
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    info:
+      enabled: true
+    health:
+      enabled: true
+    shutdown:
+      enabled: true
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
+  metrics:
+    export:
+      prometheus:
+        enabled: true
 
 logging:
   level:

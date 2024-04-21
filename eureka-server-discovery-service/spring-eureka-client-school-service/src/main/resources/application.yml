@@ -13,6 +13,31 @@ eureka:
     lease:
       duration: 5
 
+management:
+  port: 9001
+  security:
+    enabled: false
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    info:
+      enabled: true
+    health:
+      enabled: true
+    shutdown:
+      enabled: true
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+
 spring:
   application:
     name: school-service
