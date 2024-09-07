@@ -4,15 +4,23 @@ Follow the below instructions to have smooth execution of this application.
 ### Technical Details
 In this project, we are going to use below set of versions for demonstrations.
 
-    Spring Boot - 2.7.4
-    Spring - 5.3.23
+    Spring Boot - 3.3.3
+    Spring - 6.1.12
     Lombok - 1.18.24
 
 ### Building
 
 The example can be built with
+```shell
+mvn clean install
+```
 
-    mvn clean install
+### Run the project
+
+The example can be built with
+```shell
+mvn spring-boot:run
+```
 
 ## Logger
 1. Copy this project to your local machine

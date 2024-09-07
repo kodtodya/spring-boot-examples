@@ -1,7 +1,6 @@
 package com.kodtodya.practice.controller;
 
 import com.kodtodya.practice.domain.Training;
-import com.kodtodya.practice.repository.TrainingRepository;
 import com.kodtodya.practice.services.TrainingService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,19 +30,19 @@ public class TrainingServiceController {
     public ResponseEntity<String> addTraining(@RequestParam(name = "name") String name, @RequestParam(name = "duration") int duration, @RequestParam(name = "prerequisite") String prerequisite) {
         logger.info("/addTraining request got invoked..inside the controller");
         Training training = new Training(name, duration, prerequisite);
-        return new ResponseEntity<String>(service.storeTraining(training) ? "Training added to list" : "Training NOT added to list", HttpStatus.OK);
+        return new ResponseEntity<String>(service.storeTraining(training) ? "Training added to list" : "Training NOT added to list", HttpStatus.CREATED);
     }
 
     @DeleteMapping(value = "/training/{id}")
     @CrossOrigin(origins = "http://localhost:8080")
-    public ResponseEntity<String> removeTraining(@PathVariable int id) {
+    public ResponseEntity<String> removeTraining(@PathVariable("id") int id) {
         logger.info("/removeTraining request got invoked..inside the controller");
         return new ResponseEntity<String>(service.deleteTraining(id) ? "Training removed from list" : "Training NOT removed from list", HttpStatus.OK);
     }
 
     @GetMapping(value = "/training/{id}")
     @CrossOrigin(origins = "http://localhost:8080")
-    public ResponseEntity<String> search(@PathVariable int id) {
+    public ResponseEntity<String> search(@PathVariable("id") int id) {
         logger.info("/search request got invoked..inside the controller");
         return new ResponseEntity<String>(service.search(id).toString(), HttpStatus.OK);
     }

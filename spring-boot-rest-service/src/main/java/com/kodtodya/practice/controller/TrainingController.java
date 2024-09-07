@@ -2,11 +2,13 @@ package com.kodtodya.practice.controller;
 
 import com.kodtodya.practice.domain.Training;
 import com.kodtodya.practice.service.TrainingService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Slf4j
 @RestController
 public class TrainingController {
 
@@ -16,6 +18,7 @@ public class TrainingController {
 	//@RequestMapping(path = "/training", method = RequestMethod.GET)
 	@GetMapping("/training")
 	public List<Training> retrieveTrainings() {
+		log.info("inside retrieveTraining() method..");
 		return trainingService.retrieveTrainings();
 	}
 
