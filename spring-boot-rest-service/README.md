@@ -91,3 +91,15 @@ Want to test Delete?
     curl -X DELETE -H 'Content-Type: application/json' http://localhost:8080/training-management/training/5
     
     curl -X DELETE -H 'Content-Type: application/json' http://localhost:8080/training-management/training/6
+
+## How to test docker
+
+First build app with `mvn clean install` and then build docker image
+```shell
+docker build -t kodtodya/spring-boot-rest-service .
+```
+
+once, build is successful, pls run it with below command:
+```shell
+docker run -p 8080:8080 kodtodya/spring-boot-rest-service
+```
