@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Create Student</title>
+</head>
+<body>
+<h1 th:text="${@environment.getProperty('app.name')}">App Name</h1>
+<form action="/api/studentManagement/student" method="POST">
+    <label for="id">Roll No:</label><br>
+    <input type="text" id="id" name="id"><br><br>
+
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="percentage">percentage:</label><br>
+    <input type="number" id="percentage" name="percentage"><br><br>
+    <button type="submit">Create Student</button>
+</form>
+</body>
+</html>
