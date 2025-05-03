@@ -13,12 +13,14 @@ public class GreetingsController {
 
     private Logger logger = LoggerFactory.getLogger(GreetingsController.class);
 
-    @Autowired(required = true)
+    @Autowired
     private GreetingsService greetingsService;
 
     @GetMapping("/hello")
     public String controlGreetings(@RequestParam(name = "name", required = false) String name) {
-        logger.trace("i came to /hello controller");
-        return greetingsService.sayHello(name);
+        logger.debug("/hello - request received - {}", name);
+        String response = greetingsService.sayHello(name);
+        logger.debug("responding back to /hello - response: {}", response);
+        return response;
     }
 }
