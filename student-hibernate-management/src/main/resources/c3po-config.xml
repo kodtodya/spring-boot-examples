@@ -1,0 +1,14 @@
+<c3p0-config>
+    <default-config>
+        <property name="initialPoolSize">5</property>
+        <property name="minPoolSize">5</property>
+        <property name="maxPoolSize">10</property>
+        <property name="checkoutTimeout">3000</property>
+        <property name="maxStatements">200</property>
+        <property name="idleConnectionTestPeriod">300</property>
+        <property name="maxIdleTime">30</property>
+        <property name="preferredTestQuery">SELECT 1 FROM DUAL</property>
+        <property name="testConnectionOnCheckin">true</property>
+        <property name="testConnectionOnCheckout">false</property>
+    </default-config>
+</c3p0-config>
