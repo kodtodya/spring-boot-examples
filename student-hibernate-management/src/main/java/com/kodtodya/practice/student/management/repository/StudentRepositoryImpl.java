@@ -1,16 +1,15 @@
 package com.kodtodya.practice.student.management.repository;
 
 import com.kodtodya.practice.student.management.config.HibernateConfig;
+import com.kodtodya.practice.student.management.exception.StudentNotFoundException;
+import com.kodtodya.practice.student.management.model.Clazz;
 import com.kodtodya.practice.student.management.model.Student;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Repository;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Repository("studentRepository")
@@ -56,10 +55,23 @@ public class StudentRepositoryImpl implements StudentRepository {
 
         session.beginTransaction();
         Student tobeDeletedStudent = (Student) session.load(Student.class, id);
-        session.delete(tobeDeletedStudent);
+        if (tobeDeletedStudent != null) {
+            session.delete(tobeDeletedStudent);
+        } else {
+            throw new StudentNotFoundException("Student not found for id:" + id);
+        }
         session.getTransaction().commit();
         session.flush();
         session.close();
         return tobeDeletedStudent;
+    }
+
+    @Override
+    public List<Student> findStudentWithPagination(int page, int size) {
+        Session session = sessionFactory.openSession();
+        return session.createQuery("from student")
+                .setFirstResult((page - 1) * size)
+                .setMaxResults(size)
+                .list();
     }
 }

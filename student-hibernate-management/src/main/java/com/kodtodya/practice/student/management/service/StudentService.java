@@ -2,18 +2,19 @@ package com.kodtodya.practice.student.management.service;
 
 import com.kodtodya.practice.student.management.exception.StudentNotFoundException;
 import com.kodtodya.practice.student.management.model.Student;
-import com.kodtodya.practice.student.management.repository.StudentRepository;
+import com.kodtodya.practice.student.management.repository.StudentRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 @Service
 public class StudentService {
 
     @Autowired
-    private StudentRepository studentRepository;
+    private StudentRepositoryImpl studentRepository;
 
     public Student createStudent(Student student) {
         System.out.println("Inside service: " + student);
@@ -37,5 +38,11 @@ public class StudentService {
 
     public List<Student> retrieveStudents() {
         return studentRepository.findAll();
+    }
+
+    public List<Student> findStudentWithPagination(int page, int size) {
+        List<Student> students = studentRepository.findStudentWithPagination(page, size);
+        System.out.println("retrieved pagination data - " + students);
+        return students;
     }
 }
