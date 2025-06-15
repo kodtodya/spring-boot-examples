@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 @RestController
@@ -40,10 +41,15 @@ public class StudentController {
         return service.retrieveStudents();
     }
 
-    @GetMapping("/students/pagination")
+    @GetMapping("/students/map")
+    public ResponseEntity<Map<Integer, Student>> retrieveStudentMap() {
+        return new ResponseEntity(service.retrieveStudentsMap(), HttpStatus.OK);
+    }
+
+    @GetMapping("/students/page/{page}/size/{size}")
     public ResponseEntity<List<Student>> retrieveStudent(
-            @RequestParam(name = "page", defaultValue = "0") int page,
-            @RequestParam(name = "size", defaultValue = "10") int size) {
+            @PathVariable("page") int page,
+            @PathVariable("size") int size) {
         System.out.println(page + "|" + size);
         return new ResponseEntity<>(service.findStudentWithPagination(page, size), HttpStatus.OK);
     }

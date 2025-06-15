@@ -41,6 +41,14 @@ public class StudentRepositoryImpl implements StudentRepository {
     }
 
     @Override
+    public Map<Integer, Student> findAllMap() {
+        Session session = sessionFactory.openSession();
+        List<Student> students = session.createQuery("from Student").list();
+        return students.stream().collect(Collectors.toMap(Student::getId, s -> s));
+    }
+
+
+    @Override
     public Optional<Student> findById(int id) {
         Session session = sessionFactory.openSession();
         Query query = session.createQuery("from Student where id =" + id);
@@ -69,8 +77,8 @@ public class StudentRepositoryImpl implements StudentRepository {
     @Override
     public List<Student> findStudentWithPagination(int page, int size) {
         Session session = sessionFactory.openSession();
-        return session.createQuery("from student")
-                .setFirstResult((page - 1) * size)
+        return session.createQuery("from Student")
+                .setFirstResult(Math.max((page - 1), 0) * size)
                 .setMaxResults(size)
                 .list();
     }
