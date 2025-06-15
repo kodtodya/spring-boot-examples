@@ -5,7 +5,6 @@ import com.kodtodya.practice.student.management.domain.StudentDomain;
 import com.kodtodya.practice.student.management.exception.StudentNotFoundException;
 import com.kodtodya.practice.student.management.model.Group;
 import com.kodtodya.practice.student.management.model.Student;
-import com.kodtodya.practice.student.management.model.StudentGroup;
 import com.kodtodya.practice.student.management.model.StudentGroupProjection;
 import com.kodtodya.practice.student.management.repository.GroupRepository;
 import com.kodtodya.practice.student.management.repository.StudentRepository;

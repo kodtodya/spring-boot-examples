@@ -42,6 +42,12 @@ public class StudentService {
         return this.populateModel(retrievedStudent.get());
     }
 
+    public List<Student> retrieveStudentByPercentage(double percentage) {
+        List<StudentDomain> studentDomains = studentRepository.findByCriteria(percentage);
+        return studentDomains.stream()
+                .map(this::populateModel).toList();
+    }
+
     public List<Student> retrieveStudents() {
         return studentRepository.findAll().stream()
                 .map(this::populateModel).toList();

@@ -28,6 +28,11 @@ public class StudentController {
         return new ResponseEntity(service.deleteStudent(studentId), HttpStatus.OK);
     }
 
+    @GetMapping("/students/percentage")
+    public ResponseEntity<List<Student>> retrieveStudentsByPercentage(@RequestParam("percentage") double percentage) {
+        return new ResponseEntity(service.retrieveStudentByPercentage(percentage), HttpStatus.OK);
+    }
+
     @GetMapping("/student/{id}")
     public ResponseEntity<Student> retrieveStudent(@PathVariable("id") int studentId) {
         System.out.println("Inside controller: " + studentId);
